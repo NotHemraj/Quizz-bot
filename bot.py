@@ -36,8 +36,7 @@ async def send_question(chat_id):
     for i, opt in enumerate(options, start=1):
         keyboard.add(types.InlineKeyboardButton(text=opt, callback_data=f"answer:{qid}:{i}"))
 
-    await bot.send_message(chat_id, f"{hbold('Quiz Time!')}
-
+    await bot.send_message(chat_id, f"{hbold('Quiz Time!')}")
 {question}", reply_markup=keyboard)
 
 @dp.message()
