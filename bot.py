@@ -37,8 +37,7 @@ async def send_question(chat_id):
         keyboard.add(types.InlineKeyboardButton(text=opt, callback_data=f"answer:{qid}:{i}"))
 
     await bot.send_message(chat_id, f"{hbold('Quiz Time!')}")
-{question}", reply_markup=keyboard)
-
+await bot.send_message(chat_id, f"{question}", reply_markup=keyboard)
 @dp.message()
 async def start(msg: Message):
     if msg.chat.type != ChatType.GROUP:
