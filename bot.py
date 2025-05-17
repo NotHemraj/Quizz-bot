@@ -1,1 +1,0 @@
-# Sample bot file placeholder
